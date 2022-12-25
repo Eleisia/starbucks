@@ -1,4 +1,4 @@
-package com.starbucks.domain;
+package com.starbucks.domain.Entity;
 
 import lombok.Getter;
 import lombok.Setter;

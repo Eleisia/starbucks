@@ -1,4 +1,4 @@
-package com.starbucks.domain;
+package com.starbucks.domain.Entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -23,9 +23,9 @@ public class Menu {
     private String remarks;
     private String allergy;
 
-    @OneToMany(mappedBy = "menu")
+    @OneToMany(mappedBy = "menu" ,cascade = CascadeType.ALL)
     private List<CategoryMenu> categoryMenus = new ArrayList<>();
 
-    @OneToMany(mappedBy = "menu")
+    @OneToMany(mappedBy = "menu" ,cascade = CascadeType.ALL)
     private List<DrinkSize> drinkSizes  = new ArrayList<>();
 }

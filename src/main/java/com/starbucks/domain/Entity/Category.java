@@ -1,4 +1,4 @@
-package com.starbucks.domain;
+package com.starbucks.domain.Entity;
 //domain에 핵심 Entity 넣기
 import lombok.Getter;
 import lombok.Setter;
@@ -17,6 +17,6 @@ public class Category {
     private String categoryType;
     private String categoryName;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
     private List<CategoryMenu> categoryMenus = new ArrayList<>();
 }

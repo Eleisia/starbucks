@@ -1,6 +1,7 @@
 package com.starbucks;
 
-import com.starbucks.domain.Category;
+import com.starbucks.domain.Entity.Category;
+import com.starbucks.domain.Repository.CategoryRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,7 +15,8 @@ import org.springframework.transaction.annotation.Transactional;
 @SpringBootTest
 public class CategoryRepositoryTest {
 
-    @Autowired CategoryRepository categoryRepository;
+    @Autowired
+    CategoryRepository categoryRepository;
 
     @Test
     @Transactional

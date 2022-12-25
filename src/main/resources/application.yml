@@ -15,6 +15,10 @@ spring:
         format_sql: true
         show_sql: true
 
+  batch:
+    job.enabled: true # true: 앱 구동시 job 실행 함
+    jdbc.initialize-schema: always
+
 logging:
   level:
     org.hibernate.sql: debug

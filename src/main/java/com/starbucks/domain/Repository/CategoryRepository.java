@@ -1,6 +1,6 @@
-package com.starbucks;
+package com.starbucks.domain.Repository;
 
-import com.starbucks.domain.Category;
+import com.starbucks.domain.Entity.Category;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
